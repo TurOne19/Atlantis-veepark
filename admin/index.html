@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin – Atlantis H2O</title>
+
+    <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+<!-- =====================================================
+     LOGIN
+===================================================== -->
+<div id="loginScreen" class="login-screen">
+    <div class="login-box">
+        <h1>Admin</h1>
+        <p>Atlantis H2O Aquapark</p>
+
+        <input type="text" id="loginUser" placeholder="Login">
+        <input type="password" id="loginPass" placeholder="Password">
+
+        <button id="loginBtn">Logi sisse</button>
+
+        <p class="login-error" id="loginError"></p>
+    </div>
+</div>
+
+<!-- =====================================================
+     ADMIN PANEL
+===================================================== -->
+<div id="adminPanel" class="admin-panel hidden">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+        <h2>Admin</h2>
+        <nav>
+            <button data-tab="texts">Tekstid</button>
+            <button data-tab="pricing">Hinnad</button>
+            <button data-tab="calendar">Kalender</button>
+            <button data-tab="news">Uudis</button>
+        </nav>
+
+        <button id="logoutBtn" class="logout-btn">Logi välja</button>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="admin-content">
+
+        <!-- TEXTS -->
+        <section class="admin-tab" id="tab-texts">
+            <h2>Tekstide muutmine</h2>
+
+            <label>Hero title</label>
+            <input id="heroTitleInput">
+
+            <label>Hero subtitle</label>
+            <input id="heroSubtitleInput">
+
+            <button class="save-btn" data-save="texts">Salvesta</button>
+        </section>
+
+        <!-- PRICING -->
+        <section class="admin-tab hidden" id="tab-pricing">
+            <h2>Hinnad</h2>
+
+            <label>Täiskasvanu</label>
+            <input id="priceAdult">
+
+            <label>Lapsed (6–16)</label>
+            <input id="priceChild">
+
+            <label>Perepilet</label>
+            <input id="priceFamily">
+
+            <button class="save-btn" data-save="pricing">Salvesta</button>
+        </section>
+
+        <!-- CALENDAR -->
+        <section class="admin-tab hidden" id="tab-calendar">
+            <h2>Kalender</h2>
+
+            <p>Vali kuu ja muuda päevade staatust</p>
+
+            <select id="calendarMonthSelect">
+                <option value="0">Jaanuar</option>
+                <option value="1">Veebruar</option>
+                <option value="2">Märts</option>
+                <option value="3">Aprill</option>
+                <option value="4">Mai</option>
+                <option value="5">Juuni</option>
+                <option value="6">Juuli</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">Oktoober</option>
+                <option value="10">November</option>
+                <option value="11">Detsember</option>
+            </select>
+
+            <div id="calendarAdminGrid" class="calendar-admin-grid">
+                <!-- JS -->
+            </div>
+
+            <button class="save-btn" data-save="calendar">Salvesta kalender</button>
+        </section>
+
+        <!-- NEWS -->
+        <section class="admin-tab hidden" id="tab-news">
+            <h2>Uudis / Popup</h2>
+
+            <textarea id="newsText" rows="4"></textarea>
+
+            <button class="save-btn" data-save="news">Salvesta</button>
+        </section>
+
+    </main>
+</div>
+
+<script src="/admin/admin.js"></script>
+</body>
+</html>

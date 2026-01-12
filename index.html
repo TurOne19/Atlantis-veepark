@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Viimsi SPA Aquapark – Atlantis H2O</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Atlantis H2O Aquapark – Viimsi SPA veekeskus. Veeliumäed, saunad, perepiletid ja lõõgastus kogu perele.">
+    <meta name="keywords" content="aquapark, Viimsi SPA, Atlantis H2O, veekeskus, saunad">
+    <meta name="author" content="Viimsi SPA">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Atlantis H2O Aquapark">
+    <meta property="og:description" content="Suurim ja põnevam veekeskus Eestis">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aquapark.ee">
+    <meta property="og:image" content="/assets/hero/hero-desktop.jpg">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+<header class="site-header">
+    <div class="container header-inner">
+
+        <!-- LOGO -->
+        <a href="/" class="logo">
+            <img src="/assets/logo/logo.png" alt="Atlantis H2O logo" class="logo-img">
+            <span class="logo-text">Atlantis H2O</span>
+        </a>
+
+        <!-- NAVIGATION -->
+        <nav class="main-nav" id="mainNav">
+            <a href="#attractions" data-i18n="nav_attractions">Atraktsioonid</a>
+            <a href="#pricing" data-i18n="nav_pricing">Hinnad</a>
+            <a href="#saunas" data-i18n="nav_saunas">Saunad</a>
+            <a href="#gallery" data-i18n="nav_gallery">Galerii</a>
+            <a href="#calendar" data-i18n="calendar_title">Kalender</a>
+            <a href="#contact" data-i18n="nav_contact">Kontakt</a>
+        </nav>
+
+        <!-- LANGUAGE SWITCHER -->
+        <div class="lang-switcher">
+            <button data-lang="et" class="active">ET</button>
+            <button data-lang="ru">RU</button>
+            <button data-lang="en">EN</button>
+            <button data-lang="fi">FI</button>
+            <button data-lang="lv">LV</button>
+        </div>
+
+        <!-- BURGER -->
+        <button class="burger" id="burgerBtn" aria-label="Menu">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+<section class="hero" id="hero">
+
+    <picture class="hero-bg">
+        <source srcset="/assets/hero/hero-mobile.jpg" media="(max-width: 768px)">
+        <img src="/assets/hero/hero-desktop.jpg" alt="Atlantis H2O Aquapark">
+    </picture>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content container">
+        <h1 data-i18n="hero_title">
+            Viimsi SPA Aquapark
+        </h1>
+
+        <p data-i18n="hero_subtitle">
+            Suurim ja põnevam veekeskus Eestis
+        </p>
+
+        <div class="hero-actions">
+            <a href="#pricing" class="btn btn-primary" data-i18n="hero_buy">
+                Osta pilet
+            </a>
+            <a href="#attractions" class="btn btn-secondary" data-i18n="hero_view">
+                Vaata atraktsioone
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+        ↓
+    </div>
+</section>
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+<main id="mainContent">
+
+<!-- =====================================================
+     ATTRACTIONS
+===================================================== -->
+<section id="attractions" class="section">
+    <div class="container">
+
+        <h2 class="section-title" data-i18n="attractions_title">
+            Atraktsioonid
+        </h2>
+
+        <div class="attractions-grid">
+
+            <article class="attraction-card">
+                <img src="/assets/images/attractions/slides.jpg" alt="Veeliumäed">
+                <h3>Veeliumäed</h3>
+                <p>Põnevad ja kiired veeliumäed igale vanusele.</p>
+            </article>
+
+            <article class="attraction-card">
+                <img src="/assets/images/attractions/pools.jpg" alt="Basseinid">
+                <h3>Basseinid</h3>
+                <p>Sport-, lõõgastus- ja perebasseinid.</p>
+            </article>
+
+            <article class="attraction-card">
+                <img src="/assets/images/attractions/jacuzzi.jpg" alt="Mullivannid">
+                <h3>Mullivannid</h3>
+                <p>Soe vesi ja täielik lõõgastus.</p>
+            </article>
+
+            <article class="attraction-card">
+                <img src="/assets/images/attractions/kids.jpg" alt="Lasteala">
+                <h3>Lasteala</h3>
+                <p>Turvaline ja lõbus ala lastele.</p>
+            </article>
+
+        </div>
+    </div>
+</section>
+<!-- =====================================================
+     PRICING
+===================================================== -->
+<section id="pricing" class="section section-light">
+    <div class="container">
+
+        <h2 class="section-title" data-i18n="pricing_title">
+            Hinnad
+        </h2>
+
+        <div class="pricing-wrapper">
+
+            <table class="pricing-table" id="pricingTable">
+                <thead>
+                    <tr>
+                        <th>Kategooria</th>
+                        <th>Hind</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lapsed 0–3 a</td>
+                        <td class="price">Tasuta</td>
+                    </tr>
+                    <tr>
+                        <td>Lapsed 4–5 a</td>
+                        <td class="price">8 €</td>
+                    </tr>
+                    <tr>
+                        <td>Lapsed 6–16 a</td>
+                        <td class="price">12 €</td>
+                    </tr>
+                    <tr>
+                        <td>Täiskasvanu</td>
+                        <td class="price">16 €</td>
+                    </tr>
+                    <tr>
+                        <td>Perepilet (kuni 5 inimest)</td>
+                        <td class="price">45 €</td>
+                    </tr>
+                    <tr>
+                        <td>Hotelli külalised</td>
+                        <td class="price">–20%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pricing-actions">
+                <a
+                    href="https://aquapark.ee/veekeskuse-hinnakiri/"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                    data-i18n="hero_buy"
+                >
+                    Osta pilet
+                </a>
+
+                <p class="pricing-note">
+                    * Hinnad võivad muutuda. Täpne info kassas.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     SAUNAS
+===================================================== -->
+<section id="saunas" class="section">
+    <div class="container">
+
+        <h2 class="section-title" data-i18n="saunas_title">
+            Saunad
+        </h2>
+
+        <div class="saunas-grid">
+
+            <article class="sauna-card">
+                <img src="/assets/images/saunas/finnish.jpg" alt="Soome saun">
+                <h3>Soome saun</h3>
+                <p>Traditsiooniline kuiv saun sügavaks lõõgastuseks.</p>
+            </article>
+
+            <article class="sauna-card">
+                <img src="/assets/images/saunas/steam.jpg" alt="Aurusaun">
+                <h3>Aurusaun</h3>
+                <p>Niiske ja soe aur puhastab ning lõdvestab.</p>
+            </article>
+
+            <article class="sauna-card">
+                <img src="/assets/images/saunas/ice.jpg" alt="Jääkamber">
+                <h3>Jääkamber</h3>
+                <p>Värskendav jahutus pärast kuuma sauna.</p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+<section id="gallery" class="section section-light">
+    <div class="container">
+
+        <h2 class="section-title" data-i18n="gallery_title">
+            Galerii
+        </h2>
+
+        <div class="gallery-grid">
+
+            <figure class="gallery-item">
+                <img src="/assets/gallery/gallery-01.jpg" alt="Aquapark photo 1" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="/assets/gallery/gallery-02.jpg" alt="Aquapark photo 2" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="/assets/gallery/gallery-03.jpg" alt="Aquapark photo 3" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="/assets/gallery/gallery-04.jpg" alt="Aquapark photo 4" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="/assets/gallery/gallery-05.jpg" alt="Aquapark photo 5" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="/assets/gallery/gallery-06.jpg" alt="Aquapark photo 6" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="/assets/gallery/gallery-07.jpg" alt="Aquapark photo 7" loading="lazy">
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="/assets/gallery/gallery-08.jpg" alt="Aquapark photo 8" loading="lazy">
+            </figure>
+
+        </div>
+    </div>
+</section>
+<!-- =====================================================
+     CALENDAR
+===================================================== -->
+<section id="calendar" class="section">
+    <div class="container calendar-layout">
+
+        <h2 class="section-title" data-i18n="calendar_title">
+            Lahtioleku kalender
+        </h2>
+
+        <div class="calendar-widget">
+
+            <div class="calendar-header">
+                <button class="calendar-nav" data-action="prev" aria-label="Previous month">◀</button>
+                <span class="calendar-month" id="calendarMonth"></span>
+                <button class="calendar-nav" data-action="next" aria-label="Next month">▶</button>
+            </div>
+
+            <div class="calendar-weekdays">
+                <span>E</span>
+                <span>T</span>
+                <span>K</span>
+                <span>N</span>
+                <span>R</span>
+                <span>L</span>
+                <span>P</span>
+            </div>
+
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- JS renders days -->
+            </div>
+
+            <div class="calendar-legend">
+                <div class="legend-item">
+                    <span class="legend-color closed"></span> Suletud
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color short"></span> 10:00–18:00
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color normal"></span> 10:00–22:00
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color late"></span> 14:00–22:00
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color extended"></span> 10:00–21:00
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+<section id="contact" class="section section-light">
+    <div class="container contact-layout">
+
+        <div class="contact-info">
+            <h2 class="section-title section-title-left" data-i18n="contact_title">
+                Kontakt
+            </h2>
+
+            <p><strong data-i18n="contact_address">Aadress:</strong> Ravi tee 1, Viimsi, Eesti</p>
+            <p><strong data-i18n="contact_phone">Telefon:</strong>
+                <span id="contactPhone">+372 666 7045</span>
+            </p>
+            <p><strong data-i18n="contact_email">E-post:</strong>
+                <span id="contactEmail">info@aquapark.ee</span>
+            </p>
+
+            <div class="contact-hours">
+                <p><strong>E–R:</strong> 10:00 – 22:00</p>
+                <p><strong>L–P:</strong> 09:00 – 23:00</p>
+            </div>
+
+            <!-- TELEGRAM FORM -->
+            <form id="telegramForm" class="telegram-form">
+                <input type="text" name="name" placeholder="Sinu nimi" required>
+                <input type="tel" name="phone" placeholder="Telefon" required>
+                <textarea name="message" placeholder="Sõnum"></textarea>
+                <button type="submit" class="btn btn-primary">
+                    Saada
+                </button>
+            </form>
+        </div>
+
+        <div class="contact-map">
+            <iframe
+                title="Atlantis H2O Map"
+                src="https://maps.google.com/maps?q=Ravi%20tee%201%20Viimsi&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
+<!-- =====================================================
+     PARTNERS
+===================================================== -->
+<section id="partners" class="section">
+    <div class="container">
+
+        <h2 class="section-title">
+            Partnerid
+        </h2>
+
+        <div class="partners-grid">
+            <a href="https://www.spatallinn.ee/" target="_blank" rel="noopener">
+                <img src="/assets/partners/viimsi-spa.png" alt="Viimsi SPA">
+            </a>
+            <a href="https://www.meresuu.ee/" target="_blank" rel="noopener">
+                <img src="/assets/partners/meresuu-spa.png" alt="Meresuu SPA">
+            </a>
+            <a href="https://www.grandrose.ee/" target="_blank" rel="noopener">
+                <img src="/assets/partners/grand-rose.png" alt="Grand Rose SPA">
+            </a>
+            <a href="https://www.tallinkhotels.com/" target="_blank" rel="noopener">
+                <img src="/assets/partners/tallink-hotels.png" alt="Tallink Hotels">
+            </a>
+            <a href="https://www.viimsikino.ee/" target="_blank" rel="noopener">
+                <img src="/assets/partners/viimsi-kino.png" alt="Viimsi Kino">
+            </a>
+            <a href="https://www.visitestonia.com/" target="_blank" rel="noopener">
+                <img src="/assets/partners/visit-estonia.png" alt="Visit Estonia">
+            </a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <h3>Atlantis H2O Aquapark</h3>
+            <p data-i18n="footer_rights">
+                Kõik õigused kaitstud.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Kiirlingid</h4>
+            <a href="#attractions">Atraktsioonid</a>
+            <a href="#pricing">Hinnad</a>
+            <a href="#gallery">Galerii</a>
+            <a href="#contact">Kontakt</a>
+        </div>
+
+        <div class="footer-legal">
+            <h4>Info</h4>
+            <a href="/admin">Admin</a>
+            <a href="#">Privaatsuspoliitika</a>
+            <a href="#">Kasutustingimused</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Atlantis H2O Aquapark
+    </div>
+</footer>
+
+<!-- =====================================================
+     NEWS POPUP
+===================================================== -->
+<div id="newsPopup" class="news-popup" aria-hidden="true">
+    <div class="news-box">
+        <button class="news-close" id="newsClose" aria-label="Close">×</button>
+        <h3>Uudis</h3>
+        <p id="newsContent">
+            👨‍👩‍👧‍👦 UUS PEREPILET! Perepilet nüüd kuni 5 inimesele.
+        </p>
+    </div>
+</div>
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+<script src="/js/main.js" defer></script>
+<script src="/js/lang.js" defer></script>
+<script src="/js/calendar.js" defer></script>
+<script src="/js/telegram.js" defer></script>
+
+</body>
+</html>
